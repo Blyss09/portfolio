@@ -1,0 +1,131 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #111113;
+	line-height: 1;
+}
+ol, ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fin Reset CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NavBar */
+
+.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	box-sizing: border-box;
+  	transition: all .35s ease;
+}
+
+.list a {
+	color: #EDEEF0;
+	text-decoration: none;
+	font-family: Victor Mono;
+	font-size: 24px;
+}
+
+.list li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: .5em 1em;
+	padding: 0;
+  }
+  
+  .list a {
+	padding: .5em .8em;
+	color: rgba(255,255,255,.5);
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+  }
+  
+  .list a::before,
+  .list a::after {
+	content: '';
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	transition: all .35s ease;
+	opacity: 0;
+  }
+  
+  .list a::before {
+	content: '';
+	right: 0;
+	top: 0;
+	border-top: 3px solid #2E3135;
+	border-right: 3px solid #2E3135;
+	transform: translate(-100%, 50%);
+  }
+  
+  .list a:after {
+	content: '';
+	left: 0;
+	bottom: 0;
+	border-bottom: 3px solid #2E3135;
+	border-left: 3px solid #2E3135;
+	transform: translate(100%, -50%)
+  }
+  
+  .list a:hover:before,
+  .list a:hover:after{
+	transform: translate(0,0);
+	opacity: 1;
+  }
+  
+  .list a:hover {
+	color: #2E3135;
+  }
+  
